@@ -6,7 +6,7 @@ int GPSAddress = 0x42; // GPS I2C Address
 void setup()
 {
   Wire.begin(); //I2C Initialize
-  delay (5000);  
+  Serial.begin(9600);//set baud rate
 }
 
 void initReceive() 
